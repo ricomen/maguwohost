@@ -1,15 +1,71 @@
 //@import "../../node_modules/normalize.less/normalize.less";
-@import (less) "global/bootstrap.css";
+//@import (less) "global/bootstrap.css";
 @import "variables.less";
 @import "mixins.less";
 @import "global/fonts.less";
 // @import "global/icons.less";
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-style: 16px;
+  font-weight: 400;
+  color: #000;
+  background-color: #fff;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
 
-
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 30px;
+  background-color: #ffe13e;
+}
 @import "blocks/page-header.less";
 @import "blocks/main-nav.less";
 @import "blocks/page-main.less";
 @import "blocks/page-footer.less";
 
+[class^="icon-"]:before, [class*=" icon-"]:before {
+font-family: "fontello";
+font-style: normal;
+font-weight: normal;
+speak: none;
+
+display: inline-block;
+text-decoration: inherit;
+width: 1em;
+margin-right: .2em;
+text-align: center;
+/* opacity: .8; */
+
+/* For safety - reset parent styles, that can break glyph codes*/
+font-variant: normal;
+text-transform: none;
+
+/* fix buttons height, for twitter bootstrap */
+line-height: 1em;
+
+/* Animation center compensation - margins should be symmetric */
+/* remove if not needed */
+margin-left: .2em;
+
+/* you can be more comfortable with increased icons size */
+/* font-size: 120%; */
+
+/* Font smoothing. That was taken from TWBS */
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+/* Uncomment for 3D effect */
+/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-gplus:before { content: '\f0d5'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
 
