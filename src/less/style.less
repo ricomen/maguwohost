@@ -26,7 +26,6 @@ body {
   background-color: #ffe13e;
 }
 @import "blocks/page-header.less";
-@import "blocks/main-nav.less";
 @import "blocks/page-main.less";
 @import "blocks/page-footer.less";
 
@@ -65,39 +64,42 @@ margin-left: .2em;
 /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-twitter:before { content: '\f099'; } /* '' */
-.icon-gplus:before { content: '\f0d5'; } /* '' */
-.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-twitter:before { content: "\f099"; }
+.icon-gplus:before { content: "\f0d5"; }
+.icon-instagram:before { content: "\f16d"; }
 
-.raleway {
-  font-family: "Raleway";
-  font-weight: normal;
+.icon {
+  display: inline-block;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
 }
-.raleway-bold {
-  font-family: "Raleway";
-  font-weight: bold;
+.icon-arrow-down {
+  background-position: 0px 0px;
+  width: 15px;
+  height: 8px;
 }
-.raleway-semibold {
-  font-weight: 600;
+.icon-features-cloud {
+  background-position: 0px -18px;
+  width: 128px;
+  height: 128px;
 }
-.rockwell {
-  font-family: "Rockwell";
-  font-family: normal;
+.icon-features-database {
+  background-position: 0px -156px;
+  width: 128px;
+  height: 128px;
 }
-.rockwell-bold {
-  font-family: "Rockwell";
-  font-weight: bold;
+.icon-features-monitoring {
+  background-position: 0px -294px;
+  width: 128px;
+  height: 128px;
 }
-.rockwell-italic {
-  font-family: "Rockwell";
-  font-style: italic;
-  font-weight: 400;
+.icon-features-spport {
+  background-position: 0px -432px;
+  width: 128px;
+  height: 128px;
 }
-
-.simplifica {
-  font-family: "Simplifica";
-}
-.lato-bold {
-  font-family: "Lato"
-  bold;
+.icon-webhost {
+  background-position: 0px -570px;
+  width: 168px;
+  height: 169px;
 }

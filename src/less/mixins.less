@@ -285,10 +285,10 @@
 .add-font(@font-url, @font-name, @font-weight: normal, @font-style: normal) {
   font-family: @font-name;
   src: 
-  url('@{font-folder}@{font-url}.woff2') format('woff2'), 
+  url('@{font-folder}@{font-url}.woff2') format('woff2'),
   url('@{font-folder}@{font-url}.woff') format('woff'),
   url('@{font-folder}@{font-url}.ttf') format('truetype'),
-  url('@{font-folder}@{font-url}.svg#@{font-name}') format('svg');
+  url('@{font-folder}@{font-url}.svg#@{font-name}') format('svg'); 
   font-weight: @font-weight;
   font-style: @font-style;
 }

@@ -1,0 +1,68 @@
+.page-footer {
+  background-color: #363855;
+  padding-top: 95px;
+  padding-bottom: 70px;
+  .clearfix();  
+  & .map {
+    position: relative;
+    float: left;
+    color: #fff;   
+    overflow: hidden;  
+    & .map-marker {
+      position: absolute;  
+      padding-left: 40px;
+      font-weight: bold;
+      right: 50px;
+      bottom: 150px;
+      &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 33px;
+        height: 47px;
+        left: 0;
+        top: 0;
+        background-image: url("../img/pin.svg");
+        background-repeat: no-repeat;
+      } //before
+      &--indonesia {
+        right: 0;
+      } //indonesia
+    } //map-marker
+  } //map
+  &__title {
+    font-size: 18px;
+    line-height: 36px;
+    color: #fff;
+    margin-top: 49px;
+    margin-bottom: 20px;
+  }
+  &__menu {
+    float: right;
+    text-align: right;
+  } //page-footer__menu
+  &__copyright {
+    text-align: center;
+    clear: both;
+    padding-top: 65px;
+    &::before {
+      display: block;
+      content: "";
+      width: 160px;
+      height: 160px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      backgroutransform: rotate(-12deg);
+
+
+
+
+
+    }
+  } //copyright
+} //page-footer
+.social {
+  &__btn {
+    color: #ffe13e;
+  }
+}
