@@ -429,8 +429,6 @@ body {
 }
 .feedback-container {
   margin-bottom: 60px;
-
-  background-color: pink;
 }
 .feedback-container:before,
 .feedback-container:after {
@@ -448,8 +446,6 @@ body {
   line-height: 24px;
 
   margin: 20px 20px;
-
-  background-color: #ccc;
 }
 .feedback__author {
   font-size: 16px;
